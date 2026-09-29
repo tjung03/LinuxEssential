@@ -19,7 +19,7 @@ printf 'INFO ready\nERROR sample\n' > "$lab_dir/input/sample.log"
 ls -l "$lab_dir/input/sample.log"
 ```
 
-`ls -l`에서 파일 종류·소유자·그룹·권한을 확인합니다. 실습노트의 `ls -l` 예시는 이 항목들을 읽고 `chmod`, `chown`, `chgrp`가 각각 무엇을 바꾸는지 구별하는 데 사용됩니다.
+`ls -l`에서 파일 종류·소유자·그룹·권한을 확인합니다. `chmod`는 권한, `chown`은 소유자, `chgrp`는 그룹을 변경하므로 대상을 구분해 적용합니다.
 
 ```bash
 ln -s "$lab_dir/input/sample.log" \
